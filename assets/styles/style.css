@@ -1,0 +1,123 @@
+/* anton-regular - latin */
+@font-face {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../../assets/fonts/anton-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../../assets/fonts/anton-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* goudy-bookletter-1911-regular - latin */
+@font-face {
+    font-family: 'Goudy Bookletter 1911';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../../assets/fonts/goudy-bookletter-1911-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../../assets/fonts/goudy-bookletter-1911-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* montserrat-500 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../../assets/fonts/montserrat-v25-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../../assets/fonts/montserrat-v25-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* border-box model for all elements */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* --- Page color styling --- */
+
+:root {
+    --color-background-main-1: #e7cfaa;
+    --color-background-main-2: #f9f3ee;
+    --color-background-main-3: #ffffff;
+    --color-background-popup-1: #e7cfaab7;
+    --color-background-disabled-1: #ececec;
+    --color-invalid: #ff0000;
+    --color-main-font-1: #d9aa63;
+    --color-main-font-2: #2b1811;
+}
+
+/* ---------------------------------- */
+
+body {
+    width: 100%;
+    background-color: var(--color-background-main-1);
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 16px;
+    color: var(--color-main-font-1);
+}
+
+body.opened-popup {
+    overflow-y: hidden;
+}
+
+.container_centered {
+    width: calc(1280vw*100/1280);
+    max-width: 1280px;
+    min-width: 732px;
+    margin: 40px auto;
+    border-radius: 55px;
+    box-shadow: var(--color-background-main-1) 0px 4px 16px, var(--color-background-main-2) 0px 8px 24px, var(--color-background-main-3) 0px 16px 56px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    width: 190px;
+    height: 35px;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
+    color: var(--color-main-font-1);
+    display: block;
+}
+
+h2 {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 44px;
+}
+
+h3 {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 35px;
+}
+
+h4 {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-main-font-1);
+}
+
+.item {
+    text-align: center;
+    width: 700px;
+    background-color: #f9f3ee;
+    font-size: 32px;
+    color:#2b1811;
+    margin: 50px auto;
+}
